@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
 import TextForm from './components/Textform';
-//import HCFandLCM from './components/HCFandLCM';
+import HCFandLCM from './components/HCFandLCM';
 
 
 function App() {
@@ -62,8 +62,8 @@ function App() {
     <Navbar title="TextUtils" aboutText="About" mode={mode} mode1={mode1} mode2={mode2} mode3={mode3} mode4={mode4} />
     <Alert alert={alert}></Alert>
     <TextForm heading="Enter the text to analyse" mode={mode} showAlert={showAlert} btnColor={btnColor}></TextForm>
-    {/*<HCFandLCM heading="Enter the numbers to calculate HCF and LCM"></HCFandLCM>
-    <About></About>*/}
+    <HCFandLCM heading="Enter the numbers to calculate HCF and LCM" mode={mode} btnColor={btnColor}></HCFandLCM>
+    {/*<About></About>*/}
     </>
   );
 }
