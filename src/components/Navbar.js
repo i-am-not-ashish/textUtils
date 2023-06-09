@@ -26,19 +26,19 @@ export default function Navbar(props) {
 */}
 <div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}` }>
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onClick={props.mode1}/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Dark Mode 1</label>
+  <label className="form-check-label" htmlFor="inlineRadio1"><div style={{backgroundColor:"#161916",width: "20px",height:"20px",border:"1px solid black",borderRadius:"25%"}}></div></label>
 </div>
 <div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}`}>
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" onClick={props.mode2}/>
-  <label className="form-check-label" htmlFor="inlineRadio2">Dark Mode 2</label>
+  <label className="form-check-label" htmlFor="inlineRadio2"><div style={{backgroundColor:"rgb(1 13 32)",width: "20px",height:"20px",border:"1px solid black",borderRadius:"25%"}}></div></label>
 </div>
 <div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}`}>
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onClick={props.mode3}/>
-  <label className="form-check-label" htmlFor="inlineRadio3">Dark Mode 3</label>
+  <label className="form-check-label" htmlFor="inlineRadio3"><div style={{backgroundColor:"rgb(2 32 1)",width: "20px",height:"20px",border:"1px solid black",borderRadius:"25%"}}></div></label>
 </div>
 <div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}`}>
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onClick={props.mode4}/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Disable Dark Mode</label>
+  <label className="form-check-label" htmlFor="inlineRadio1">Normal Mode</label>
 </div>
     </div>
   </div>
