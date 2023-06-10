@@ -36,9 +36,9 @@ export default function Navbar(props) {
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" onClick={props.mode3}/>
   <label className="form-check-label" htmlFor="inlineRadio3"><div style={{backgroundColor:"rgb(2 32 1)",width: "20px",height:"20px",border:"1px solid black",borderRadius:"25%"}}></div></label>
 </div>
-<div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}`}>
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" onClick={props.mode4}/>
-  <label className="form-check-label" htmlFor="inlineRadio1">Normal Mode</label>
+<div className={`form-check form-check-inline text-${props.mode==='light'?'dark':'light'}`} >
+  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled={props.mode==='light'} onClick={props.mode4}/>
+  <label className="form-check-label" htmlFor="inlineRadio1"></label>
 </div>
     </div>
   </div>

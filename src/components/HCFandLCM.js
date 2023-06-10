@@ -53,9 +53,9 @@ export default function HCFandLCM(props) {
     <h1>{props.heading}</h1>
     <div><input type="text" className='input-form my-1 mx-2' value={a} onChange={HandleA}/></div>
     <div><input type="text" className='input-form my-1 mx-2' value={b} onChange={HandleB}/></div>
-    <button type="button" className="btn btn-outline-primary mx-2 my-1" style={{backgroundColor: props.mode==='dark'?props.btnColor:'#0d6efd',color : 'white'}} onClick={HandleClick}>Submit</button>
-    <div className='container mx-2 my-1 '>{x}</div>
-    <div className='container mx-2 my-1'>{y}</div>
+    <button type="button" className="btn btn-outline-primary mx-2 my-1" style={{backgroundColor: props.mode==='dark'?props.btnColor:'#0d6efd',color : 'white'}} onClick={HandleClick} disabled= {a.length===0||b.length===0}>Submit</button><br></br>
+    <input type="text" className='input-form my-1 mx-2' value={x}/>
+    <input type="text" className='input-form my-1 mx-2' value={y}/>
     </div>
   )
 }
