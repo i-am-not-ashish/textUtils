@@ -29,7 +29,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-2" style={{color: props.mode==='dark'?'white':'black'}}>
       <h1>Your Text Summery</h1>
-      <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words, {text.length} characters</p>
+      <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words, {text.length} characters</p>
       <p>It will take {0.008*text.split(" ").filter((element)=>{return element.length!==0}).length} minutes to read.</p>
       <h2>Preview</h2>
       <p>{text.length>0?text:"Enter some text to preview. "}</p>
